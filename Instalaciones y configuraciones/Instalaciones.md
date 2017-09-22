@@ -88,8 +88,10 @@ Y procedemos a instalar sus respectivos sistemas operativos.
 
 ![imagen](./images/Windows/c14.PNG)
 
+<hr>
 
-- Unidades Organizativas
+
+- Unidades Organizativas *(En el **servidor**)*
 
 >Vamos a crear una unidad organizativa, en la cual meteremos dentro un usuario y un grupo para poder iniciar sesión en el servidor.
 
