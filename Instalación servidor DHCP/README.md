@@ -9,9 +9,11 @@
 
 <hr>
 
+* Nos movemos para > *Asistente para agregar roles y características*, donde empezaremos a crear/configurar el **servicio dhcp**.
+
 ![imagen](./images/c1.PNG)
 
-
+* Nos basaremos en pulsar **siguiente** hasta que tengamos que cambiar algo que nos afecte en el servicio.
 
 ![imagen](./images/c2.PNG)
 
@@ -19,31 +21,33 @@
 
 ![imagen](./images/c3.PNG)
 
-
+* Una vez aquí, buscamos el apartado llamado **Servidor DHCP** y lo seleccionamos, con lo que abriremos una nueva ventana en la que simplemente tendremos que darle a *Agregar características*.
 
 ![imagen](./images/c4.PNG)
 
-
+* En la siguiente ventana, pulsaremos *Siguiente* ya que no nos interesa cambiar ninguna característica más.
 
 ![imagen](./images/c5.PNG)
 
-
+* Confirmamos la selección del servidor DHCP, con lo que procedemos a la instalación de éste.
 
 ![imagen](./images/c6.PNG)
 
-
+* Al finalizar, pincharemos sobre **Completar configuración de DHCP**, y completaremos los siguientes campos
 
 ![imagen](./images/c7.PNG)
 
-
+* En mi caso dejé las credenciales del usuario por defecto.
 
 ![imagen](./images/c8.PNG)
 
-
+* Y ya tendríamos instalado el servidor DHCP como podemos comprobar en las herramientas.
 
 ![imagen](./images/c9.PNG)
 
+>Ahora tenemos que empezar con la configuración DHCP.
 
+* En herramientas, vamos a DHCP, para proceder con dicha configuración sobre el servidor. Una vez ahí, vamos a crear un nuevo ámbito, en *IPv4*.
 
 ![imagen](./images/c10.PNG)
 
@@ -51,19 +55,23 @@
 
 ![imagen](./images/c11.PNG)
 
-
+* El nombre de nuestro ámbito lo elegí aleatoriamente, igual que la descripción.
 
 ![imagen](./images/c12.PNG)
 
+>Las IPs *172.18.19.0 y 172.18.19.1* están reservadas al servidor y puerta de enlace, respectivamente.
+>
+>Aún así tenemos que cogerlas para posteriormente excluirlas.
 
+* En el rango de IPs, cogemos, por ejemplo, desde la IP del servidor hasta la *.25*  
 
 ![imagen](./images/c13.PNG)
 
-
+* Y ahora tenemos que excluir las dos IPs que ya están en uso, es decir, la del servidor y la del gateway.
 
 ![imagen](./images/c14.PNG)
 
-
+* Seguimos, con siguiente, para finalizar la configuración.
 
 ![imagen](./images/c15.PNG)
 
@@ -78,3 +86,5 @@
 
 
 ![imagen](./images/c18.PNG)
+
+* Y ahora ya tendríamos la configuración del **servidor DHCP** terminada.
