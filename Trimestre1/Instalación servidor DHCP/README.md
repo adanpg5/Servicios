@@ -6,6 +6,7 @@
   - La IP del servidor es *172.18.19.0*
    - La máscara es la predeterminada por la clase
    - Y la puerta de enlace es *172.18.19.1*
+   - En el VirtualBox, ambas máquinas tienen que tener **Red interna** con el nombre de *red-interna*.
 
 <hr>
 
@@ -73,6 +74,7 @@
 
 * Seguimos, con siguiente, para finalizar la configuración.
 
+
 ![imagen](./images/c15.PNG)
 
 
@@ -88,3 +90,35 @@
 ![imagen](./images/c18.PNG)
 
 * Y ahora ya tendríamos la configuración del **servidor DHCP** terminada.
+
+<hr>
+
+* En la máquina cliente tenemos que tener la IP del servidor como DNS preferido, *no olvidar*.
+
+![imagen](./images/c19.PNG)
+
+* En dicha máquina, renovamos la IP con el comando *ipconfig /renew*, y nos debería dar una IP asignada por el ámbito del servidor.
+
+![imagen](./images/c20.PNG)
+
+* Luego creamos otro Ámbito, pero con otras IPs, que en mi caso le di la 173.18.0.0
+
+![imagen](./images/c21.PNG)
+
+* Y para crear un **Superámbito**, con Click derecho sobre IPv4 > Superámbito, tenemos que darle un nombre y seleccionar los ámbitos que queremos tener dentro, que en nuestro caso elegiremos los dos creados.
+
+![imagen](./images/c22.PNG)
+
+![imagen](./images/c23.PNG)
+
+![imagen](./images/c25.PNG)
+
+* Y nos tendría que aparecer lo siguiente, el segundo ámbito sale como desactivado porque lo hice yo manualmente.
+
+![imagen](./images/c26.PNG)
+
+* Si luego desactivamos el Superámbito, y vamos al cliente y renovamos la IP, debería salir un error, ya que ambos ámbitos no están activos, y son ellos los que nos proporcionan las IP.
+
+![imagen](./images/c27.PNG)
+
+<hr>
