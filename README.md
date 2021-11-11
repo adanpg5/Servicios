@@ -2,7 +2,7 @@
 
 | Prácticas   |              :octocat: |
 |----------------:|------:|
-| Enlace a [ApacheLinu](https://github.com/adaanp/Servicios/tree/master/Prácticas/ApacheLinu) |  :+1: |
+| Enlace a [ApacheLinux](https://github.com/adaanp/Servicios/tree/master/Prácticas/ApacheLinux) |  :+1: |
 | Enlace a [Correo-Linux](https://github.com/adaanp/Servicios/tree/master/Prácticas/Correo-Linux) |  :+1: |
 | Enlace a [DHCP-Failover](https://github.com/adaanp/Serviciosp/tree/master/Prácticas/DHCP-Failover) |  :+1: |
 | Enlace a [FTP](https://github.com/adaanp/Servicios/tree/master/Prácticas/FTP) |  :+1: |
